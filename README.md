@@ -1,4 +1,4 @@
-# Digital Logic Design (Dr Das)
+# Digital Logic Design_Dr Das
 Fundamentals of Digital Circuits
 
 Overview:
@@ -16,7 +16,7 @@ The goal of this repository is to:
 
 How to Use:
     Download or clone the repository:
-    git clone https://github.com/your-username/Digital Logic Design_Dr Das.git
+    git clone git@github.com:MaryamShahangian/Digital Logic Design_Dr Das.git
     Open the provided PDF to get started with the basics.
     Explore additional resources and examples for further learning.
     
