@@ -1,0 +1,15 @@
+{C:/Users/Maryam/Desktop/Lab/my inverter.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Maryam/Desktop/Lab/my inverter.sv}
+Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+-- Compiling module myinverter
+
+Top level modules:
+	myinverter
+
+} {} {}} C:/Users/Maryam/Desktop/Lab/tb_my_inverter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/Maryam/Desktop/Lab/tb_my_inverter.sv
+Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+-- Compiling module tb_my_inverter
+
+Top level modules:
+	tb_my_inverter
+
+} {} {}}
