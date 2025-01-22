@@ -15,8 +15,7 @@ The goal of this repository is to:
 3.	Share knowledge and encourage collaboration in the field of digital electronics.
 ________________________________________
 How to Use
-1.	Download or clone the repository: 
-git clone git@github.com:MaryamShahangian/Digital-Logic-Design_Dr-Das.git
+1.	Download or clone the repository: (https://github.com/MaryamShahangian/DLD_DrDas) or 
 2.	Open the provided PDF to get started with the basics.
 3.	Explore additional resources and examples for further learning.
 ________________________________________
