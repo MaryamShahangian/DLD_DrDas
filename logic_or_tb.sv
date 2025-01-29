@@ -5,7 +5,7 @@ module tb ();
    logic a;  // Input a
    logic b;  // Input b
    logic y;  // Output y
-   logic        clk; 
+   logic clk; 
 
    // Instantiate the Device Under Test (DUT)
    logic_or dut (
@@ -14,51 +14,32 @@ module tb ();
        .y(y)
    );
 
- // 2 ns clock
+   // 2 ns clock
    initial 
      begin	
-	clk = 1'b1;
-	forever #10 clk = ~clk;
+        clk = 1'b1;
+        forever #10 clk = ~clk;
      end
-
 
    initial
      begin
-    
-	#20  a = $random;	
-	#0   b = $random;	
+        // Apply fixed values instead of random
+        #10  a = 0; b = 0;  // Expected y = 0
+        #10  a = 0; b = 1;  // Expected y = 1
+        #10  a = 1; b = 0;  // Expected y = 1
+        #10  a = 1; b = 1;  // Expected y = 1
+        #10  a = 0; b = 0;  // Expected y = 0
+        #10  a = 1; b = 1;  // Expected y = 1
 
-	#10  a = $random;	
-	#0   b = $random;	
-
-	#20  a = $random;	
-	#0   b = $random;	
-
-	#20  a = $random;	
-	#0   b = $random;	
-
-	#10  a = $random;	
-	#0   b = $random;	
-
-	#20  a = $random;	
-	#0   b = $random;		
-
-	#20  a = $random;	
-	#0   b = $random;	
-
-	#30  a = $random;	
-	#0   b = $random;	
-
-	#20  a = $random;	
-	#0   b = $random;	
-
-	#20  a = $random;	
-	#0   b = $random;	
-
-	#30  a = $random;	
-	#0   b = $random;		
-	
+        // End simulation
+        #20;
+        $finish;
      end
 
-   
+   // Monitor outputs
+   initial 
+     begin
+        $monitor("Time: %0t | a = %b, b = %b, y = %b", $time, a, b, y);
+     end
+
 endmodule
