@@ -24,7 +24,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog fulladder.sv fulladder_tb.sv
+vlog halfadder.sv halfadder_tb.sv
 
 # start and run simulation
 vsim -voptargs=+acc work.tb
